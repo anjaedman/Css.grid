@@ -1,0 +1,59 @@
+body {
+
+    background-color: #2d2d2d;
+  
+    color: white;
+  
+  }
+  
+  header {
+  
+    grid-area: g_area_header;
+  
+    background-color: purple;
+  
+  }
+  
+  main {
+  
+    grid-area: g_area_main;
+  
+    background-color: red;
+  
+  }
+  
+  aside {
+  
+    grid-area: g_area_sidebar;
+  
+    background-color: blueviolet;
+  
+  }
+  
+  .grid-container {
+  
+    display: grid;
+  
+    background-color: gainsboro;
+  
+    max-width: 400px;
+  
+    grid-template-columns: repeat(6, 1fr);
+  
+    grid-template-rows: 100px auto;
+  
+    grid-template-areas:
+  
+      /* 6 kolumner => g_area_header 6 ggr */
+  
+      /* 1 raden */
+  
+      "g_area_header g_area_header g_area_header g_area_header g_area_header g_area_header"
+  
+      /* 6 kolumner => g_area_main 4ggr | g_area_sidebar 2ggr  */
+  
+      /* 2a raden */
+  
+      "g_area_main g_area_main g_area_main g_area_main g_area_sidebar g_area_sidebar";
+  
+  }
